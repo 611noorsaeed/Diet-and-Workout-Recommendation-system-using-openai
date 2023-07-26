@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diet and Workouts Recommendations</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="background:black;color:white">
+    <div class="container mycont mt-5" style="background:white;color:black;border-radius:15px; padding:10px;">
+        <h1 class="text-center">Diet and Workouts Recommendations</h1>
+
+        <form action="/recommend" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select class="form-control" id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" class="form-control" id="weight" name="weight">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="height">Height (m):</label>
+                        <input type="number" class="form-control" id="height" name="height" step="0.01">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="veg_or_nonveg">Veg or Non-Veg:</label>
+                        <select class="form-control" id="veg_or_nonveg" name="veg_or_nonveg">
+                            <option value="veg">Veg</option>
+                            <option value="nonveg">Non-Veg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="disease">Generic Disease:</label>
+                        <input type="text" class="form-control" id="disease" name="disease">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="region">Region:</label>
+                        <input type="text" class="form-control" id="region" name="region">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="allergics">Allergics:</label>
+                        <input type="text" class="form-control" id="allergics" name="allergics">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="foodtype">Food Type:</label>
+                <input type="text" class="form-control" id="foodtype" name="foodtype">
+            </div>
+
+            <button type="submit" class="btn btn-danger btn-lrg " style="width:50%; padding:1px;margin-left:20%; font-weight:bold">Recommend Diets</button>
+        </form>
+    </div>
+
+<!--    <div class="container mt-5">-->
+<!--        <h3>Restaurants in Pakistan:</h3>-->
+<!--        {% for i in restaurant_names %}-->
+<!--        <p>-->
+<!--            {{i}}-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+
+<!--        <h3>BreakFast</h3>-->
+<!--        {% for i in breakfast_names %}-->
+<!--        <p>-->
+<!--            {{i}}-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+
+<!--        <h3>Dinners</h3>-->
+<!--        {% for i in dinner_names %}-->
+<!--        <p>-->
+<!--            {{i}}-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+
+<!--        <h3>Workouts Planes</h3>-->
+<!--        {% for i in workout_names %}-->
+<!--        <p>-->
+<!--            {{i}}-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
